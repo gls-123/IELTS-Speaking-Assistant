@@ -15,7 +15,7 @@ import threading
 recognizer = sr.Recognizer()
 
 # Configure the Generative AI API for evaluation
-genai.configure(api_key="Your GenAI key")
+genai.configure(api_key="AIzaSyCW9uTMnOtETtH3hCPilv6qTRhUtKboscs")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # --------------- FILE READING SECTION ---------------
@@ -190,7 +190,7 @@ frame = tk.Frame(root)
 frame.pack(pady=20)
 
 # Load and display the logo
-logo_path = "IELTS-logo.png"
+logo_path = "E:/Download/Video/IELTS luyện/IELTS-Speaking-Assistant/IELTS-logo.png"
 original_logo = Image.open(logo_path).convert("RGBA")
 resized_logo = original_logo.resize((220, 100), Image.Resampling.LANCZOS)
 logo_image = ImageTk.PhotoImage(resized_logo)
@@ -231,7 +231,8 @@ next_question_button.config(state=tk.DISABLED)
 # --------------- MAIN PROGRAM SECTION ---------------
 
 # Read topics and questions from the file
-file_path = "IELTS_Speaking_Formatted_Final.txt"
+file_path = "E:/Download/Video/IELTS luyện/IELTS-Speaking-Assistant/IELTS_Speaking_Formatted_Final.txt"
+
 topics_and_questions = read_topics_and_questions(file_path)
 
 # Prepare list of topics and shuffle them
